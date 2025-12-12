@@ -1,0 +1,291 @@
+<!DOCTYPE html>                 <!-- 声明为HTML5文档 -->
+<html lang="en">                <!-- 根元素，包含整个HTML文档 -->
+
+<head>                          <!-- 头元素，包含文档的元数据 -->
+    <meta charset="UTF-8">          <!--定义网页编码格式-->
+    <title>文档标题</title>
+</head>
+
+<body>                          <!-- 体元素，包含文档的主体内容 -->
+    <a href="https://orchard741.github.io">超链接</a>               <!-- <开始标签 name="value"> </结束标签> -->
+    <br />                                                          <!-- <自闭合元素 />-->
+    <img src="https://avatars.githubusercontent.com/u/34409557?v=4" width="10" height="10" alt="图片" />
+
+    <br />
+    <a href="https://www.runoob.com/html/html-attributes.html">HTML属性参考手册</a>
+    <details>
+        <hr />                                                      <!-- 水平线 -->
+        <h1>HTML <span class="color_h1">属性</span></h1>
+        <hr>
+        <p class="intro">属性是 HTML 元素提供的附加信息。</p>
+        <p class="intro">属性通常出现在 HTML 标签的开始标签中，用于定义元素的行为、样式、内容或其他特性。</p>
+        <p class="intro">属性总是以 <span class="marked">name="value"</span> 的形式写在标签内，<strong>name</strong>
+            是属性的名称，<strong>value</strong> 是属性的值。</p>
+        <hr>
+        <h2>HTML 属性</h2>
+        <ul>
+            <li>HTML 元素可以设置<b>属性</b></li>
+            <li>属性可以在元素中添加<b>附加信息</b></li>
+            <li>属性一般描述于<b>开始标签</b></li>
+            <li>属性总是以名称/值对的形式出现，<b>比如：name="value"</b>。</li>
+        </ul>
+
+        <hr>
+        <h2>HTML 属性常用引用属性值</h2>
+        <p>属性值应该始终被包括在引号内。</p>
+        <p>双引号是最常用的，不过使用单引号也没有问题。</p>
+        <p>
+            使用双引号：</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://www.runoob.com"</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;a href=&quot;https://www.runoob.com&quot;&gt;Link&lt;/a&gt;" style="display: none;"></button></pre>
+        <p>
+            使用单引号：</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">'https://www.runoob.com'</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;a href='https://www.runoob.com'&gt;Link&lt;/a&gt;" style="display: none;"></button></pre>
+        <p><b>提示:</b> 在某些个别的情况下，比如属性值本身就含有双引号，那么您必须使用单引号，例如：</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="pln">name</span><span class="pun">=</span><span class="str">'John "ShotGun" Nelson'</span><button class="copy-code-button" type="button" data-clipboard-text="name='John &quot;ShotGun&quot; Nelson'" style="display: none;"></button></pre>
+        <p>或者：</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://www.runoob.com?q='search'"</span><span class="tag">&gt;</span><span class="pln">Link</span><span class="tag">&lt;/a&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;a href=&quot;https://www.runoob.com?q='search'&quot;&gt;Link&lt;/a&gt;" style="display: none;"></button></pre>
+        <hr>
+        <h2>HTML 属性参考手册</h2>
+        <p>查看完整的HTML属性列表:
+            <a href="/tags/html-reference.html" target="_blank" rel="noopener">HTML 标签参考手册</a>。
+        </p>
+        <p>下面列出了适用于大多数 HTML 元素的属性：</p>
+        <table class="reference">
+            <thead>
+                <tr>
+                    <th>属性名</th>
+                    <th>适用元素</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><code>id</code></td>
+                    <td>所有元素</td>
+                    <td>为元素指定唯一的标识符。</td>
+                </tr>
+                <tr>
+                    <td><code>class</code></td>
+                    <td>所有元素</td>
+                    <td>为元素指定一个或多个类名，用于 CSS 或 JavaScript 选择。</td>
+                </tr>
+                <tr>
+                    <td><code>style</code></td>
+                    <td>所有元素</td>
+                    <td>直接在元素上应用 CSS 样式。</td>
+                </tr>
+                <tr>
+                    <td><code>title</code></td>
+                    <td>所有元素</td>
+                    <td>为元素提供额外的提示信息，通常在鼠标悬停时显示。</td>
+                </tr>
+                <tr>
+                    <td><code>data-*</code></td>
+                    <td>所有元素</td>
+                    <td>用于存储自定义数据，通常通过 JavaScript 访问。</td>
+                </tr>
+                <tr>
+                    <td><code>href</code></td>
+                    <td><code>&lt;a&gt;</code>, <code>&lt;link&gt;</code></td>
+                    <td>指定链接的目标 URL。</td>
+                </tr>
+                <tr>
+                    <td><code>src</code></td>
+                    <td><code>&lt;img&gt;</code>, <code>&lt;script&gt;</code>, <code>&lt;iframe&gt;</code></td>
+                    <td>指定外部资源（如图片、脚本、框架）的 URL。</td>
+                </tr>
+                <tr>
+                    <td><code>alt</code></td>
+                    <td><code>&lt;img&gt;</code></td>
+                    <td>为图像提供替代文本，当图像无法显示时显示。</td>
+                </tr>
+                <tr>
+                    <td><code>type</code></td>
+                    <td><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code></td>
+                    <td>指定输入控件的类型（如 <code>text</code>, <code>password</code>, <code>checkbox</code> 等）。</td>
+                </tr>
+                <tr>
+                    <td><code>value</code></td>
+                    <td><code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;option&gt;</code></td>
+                    <td>指定元素的初始值。</td>
+                </tr>
+                <tr>
+                    <td><code>disabled</code></td>
+                    <td>表单元素</td>
+                    <td>禁用元素，使其不可交互。</td>
+                </tr>
+                <tr>
+                    <td><code>checked</code></td>
+                    <td><code>&lt;input type="checkbox"&gt;</code>, <code>&lt;input type="radio"&gt;</code></td>
+                    <td>指定复选框或单选按钮是否被选中。</td>
+                </tr>
+                <tr>
+                    <td><code>placeholder</code></td>
+                    <td><code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code></td>
+                    <td>在输入框中显示提示文本。</td>
+                </tr>
+                <tr>
+                    <td><code>target</code></td>
+                    <td><code>&lt;a&gt;</code>, <code>&lt;form&gt;</code></td>
+                    <td>指定链接或表单提交的目标窗口或框架（如 <code>_blank</code> 表示新标签页）。</td>
+                </tr>
+                <tr>
+                    <td><code>readonly</code></td>
+                    <td>表单元素</td>
+                    <td>使输入框只读。</td>
+                </tr>
+                <tr>
+                    <td><code>required</code></td>
+                    <td>表单元素</td>
+                    <td>指定输入字段为必填项。</td>
+                </tr>
+                <tr>
+                    <td><code>autoplay</code></td>
+                    <td><code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code></td>
+                    <td>自动播放媒体。</td>
+                </tr>
+                <tr>
+                    <td><code>onclick</code></td>
+                    <td>所有元素</td>
+                    <td>当用户点击元素时触发 JavaScript 事件。</td>
+                </tr>
+                <tr>
+                    <td><code>onmouseover</code></td>
+                    <td>所有元素</td>
+                    <td>当用户将鼠标悬停在元素上时触发 JavaScript 事件。</td>
+                </tr>
+                <tr>
+                    <td><code>onchange</code></td>
+                    <td>表单元素</td>
+                    <td>当元素的值发生变化时触发 JavaScript 事件。</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>全局属性</h3>
+        <p>
+            全局属性是所有 HTML 元素都可以使用的属性。</p>
+        <p>
+            <span class="marked">id</span>：为元素指定唯一的标识符。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"header"</span><span class="tag">&gt;</span><span class="pln">This is the header</span><span class="tag">&lt;/div&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;div id=&quot;header&quot;&gt;This is the header&lt;/div&gt;" style="display: none;"></button></pre>
+        <p>
+            <span class="marked">class</span>：为元素指定一个或多个类名，用于 CSS 或 JavaScript 选择。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text highlight"</span><span class="tag">&gt;</span><span class="pln">This is a highlighted text.</span><span class="tag">&lt;/p&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;p class=&quot;text highlight&quot;&gt;This is a highlighted text.&lt;/p&gt;"></button></pre>
+        <p>
+            <span class="marked">style</span>：用于直接在元素上应用 CSS 样式。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">color</span><span class="pun">:</span><span class="pln"> blue</span><span class="pun">;</span><span class="pln"> font</span><span class="pun">-</span><span class="pln">size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">14px</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">This is a styled paragraph.</span><span class="tag">&lt;/p&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;p style=&quot;color: blue; font-size: 14px;&quot;&gt;This is a styled paragraph.&lt;/p&gt;"></button></pre>
+        <p>
+            <span class="marked">title</span>：为元素提供额外的提示信息，通常在鼠标悬停时显示。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"HyperText Markup Language"</span><span class="tag">&gt;</span><span class="pln">HTML</span><span class="tag">&lt;/abbr&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt;"></button></pre>
+        <p>
+            <span class="marked">data-*</span>：用于存储自定义数据，通常通过 JavaScript 访问。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">data-user-id</span><span class="pun">=</span><span class="atv">"12345"</span><span class="tag">&gt;</span><span class="pln">User Info</span><span class="tag">&lt;/div&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;div data-user-id=&quot;12345&quot;&gt;User Info&lt;/div&gt;" style="display: none;"></button></pre>
+        <h3>
+            特定元素的属性</h3>
+        <p>
+            某些属性仅适用于特定的 HTML 元素。</p>
+        <p><strong><code>href</code></strong>（用于 <code>&lt;a&gt;</code> 和 <code>&lt;link&gt;</code> 元素）：指定链接的目标 URL。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://www.example.com"</span><span class="tag">&gt;</span><span class="pln">Visit Example</span><span class="tag">&lt;/a&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;a href=&quot;https://www.example.com&quot;&gt;Visit Example&lt;/a&gt;"></button></pre>
+        <p><strong><code>src</code></strong>（用于 <code>&lt;img&gt;</code>, <code>&lt;script&gt;</code>,
+            <code>&lt;iframe&gt;</code> 等元素）：指定外部资源的 URL。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"image.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"An example image"</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;img src=&quot;image.jpg&quot; alt=&quot;An example image&quot;&gt;"></button></pre>
+        <p>
+            alt（用于 <code>&lt;img&gt;</code> 元素）：为图像提供替代文本，当图像无法显示时显示。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;img</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"image.jpg"</span><span class="pln"> </span><span class="atn">alt</span><span class="pun">=</span><span class="atv">"An example image"</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;img src=&quot;image.jpg&quot; alt=&quot;An example image&quot;&gt;" style="display: none;"></button></pre>
+        <p><strong><code>type</code></strong>（用于 <code>&lt;input&gt;</code> 和 <code>&lt;button&gt;</code> 元素）：指定输入控件的类型。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"Enter your name"</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; placeholder=&quot;Enter your name&quot;&gt;" style="display: none;"></button></pre>
+        <p><strong><code>value</code></strong>（用于 <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>,
+            <code>&lt;option&gt;</code> 等元素）：指定元素的初始值。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">value</span><span class="pun">=</span><span class="atv">"Default Value"</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; value=&quot;Default Value&quot;&gt;" style="display: none;"></button></pre>
+        <p>
+            disabled（用于表单元素）：禁用元素，使其不可交互。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">disabled</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; disabled&gt;"></button></pre>
+        <p><strong><code>checked</code></strong>（用于 <code>&lt;input type="checkbox"&gt;</code> 和
+            <code>&lt;input type="radio"&gt;</code>）：指定复选框或单选按钮是否被选中。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"checkbox"</span><span class="pln"> </span><span class="atn">checked</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;checkbox&quot; checked&gt;"></button></pre>
+        <p><strong><code>placeholder</code></strong>（用于 <code>&lt;input&gt;</code> 和 <code>&lt;textarea&gt;</code>
+            元素）：在输入框中显示提示文本。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">placeholder</span><span class="pun">=</span><span class="atv">"Enter your email"</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; placeholder=&quot;Enter your email&quot;&gt;" style="display: none;"></button></pre>
+        <p><strong><code>target</code></strong>（用于 <code>&lt;a&gt;</code> 和 <code>&lt;form&gt;</code>
+            元素）：指定链接或表单提交的目标窗口或框架。</p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"https://www.example.com"</span><span class="pln"> </span><span class="atn">target</span><span class="pun">=</span><span class="atv">"_blank"</span><span class="tag">&gt;</span><span class="pln">Open in new tab</span><span class="tag">&lt;/a&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;a href=&quot;https://www.example.com&quot; target=&quot;_blank&quot;&gt;Open in new tab&lt;/a&gt;" style="display: none;"></button></pre>
+        <h3>
+            布尔属性</h3>
+        <p>
+            布尔属性是指不需要值的属性，它们的存在即表示 true，不存在则表示 false。</p>
+        <p>
+            <span class="marked">disabled</span>：禁用元素。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">disabled</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; disabled&gt;" style="display: none;"></button></pre>
+        <p>
+            <span class="marked">readonly</span>：使输入框只读。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">readonly</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; readonly&gt;" style="display: none;"></button></pre>
+        <p>
+            <span class="marked">required</span>：指定输入字段为必填项。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">required</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; required&gt;"></button></pre>
+        <p><strong><code>autoplay</code></strong>（用于 <code>&lt;audio&gt;</code> 和 <code>&lt;video&gt;</code> 元素）：自动播放媒体。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;video</span><span class="pln"> </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"video.mp4"</span><span class="pln"> </span><span class="atn">autoplay</span><span class="tag">&gt;&lt;/video&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;video src=&quot;video.mp4&quot; autoplay&gt;&lt;/video&gt;"></button></pre>
+        <h3>自定义属性</h3>
+        <p>
+            HTML5 引入了 <span class="marked">data-*</span> 属性，允许开发者自定义属性来存储额外的数据。</p>
+        <p>
+            <span class="marked">data-*</span>：用于存储自定义数据，通常通过 JavaScript 访问。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">data-user-id</span><span class="pun">=</span><span class="atv">"12345"</span><span class="pln"> </span><span class="atn">data-role</span><span class="pun">=</span><span class="atv">"admin"</span><span class="tag">&gt;</span><span class="pln">User Info</span><span class="tag">&lt;/div&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;div data-user-id=&quot;12345&quot; data-role=&quot;admin&quot;&gt;User Info&lt;/div&gt;"></button></pre>
+        <h3>事件处理属性</h3>
+        <p>
+            HTML 元素可以通过事件处理属性来响应特定的事件，如点击、鼠标悬停等。</p>
+        <p>
+            <span class="marked">onclick</span>：当用户点击元素时触发。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;button</span><span class="pln"> </span><span class="atn">onclick</span><span class="pun">=</span><span class="atv">"</span><span class="pln">alert</span><span class="pun">(</span><span class="str">'Button clicked!'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Click Me</span><span class="tag">&lt;/button&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;button onclick=&quot;alert('Button clicked!')&quot;&gt;Click Me&lt;/button&gt;" style="display: none;"></button></pre>
+        <p>
+            <span class="marked">onmouseover</span>：当用户将鼠标悬停在元素上时触发。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">onmouseover</span><span class="pun">=</span><span class="atv">"</span><span class="kwd">this</span><span class="pun">.</span><span class="pln">style</span><span class="pun">.</span><span class="pln">backgroundColor</span><span class="pun">=</span><span class="str">'yellow'</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">Hover over me</span><span class="tag">&lt;/div&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;div onmouseover=&quot;this.style.backgroundColor='yellow'&quot;&gt;Hover over me&lt;/div&gt;" style="display: none;"></button></pre>
+        <p>
+            <span class="marked">onchange</span>：当元素的值发生变化时触发。
+        </p>
+        <pre class="prettyprint prettyprinted"
+            style=""><span class="tag">&lt;input</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text"</span><span class="pln"> </span><span class="atn">onchange</span><span class="pun">=</span><span class="atv">"</span><span class="pln">alert</span><span class="pun">(</span><span class="str">'Value changed!'</span><span class="pun">)</span><span class="atv">"</span><span class="tag">&gt;</span><button class="copy-code-button" type="button" data-clipboard-text="&lt;input type=&quot;text&quot; onchange=&quot;alert('Value changed!')&quot;&gt;" style="display: none;"></button></pre>
+        <p>更多标准属性说明：
+            <a href="/tags/ref-standardattributes.html">HTML 标准属性参考手册</a>.
+        </p>
+        <br> <!-- 其他扩展 -->
+
+</body>
+
+</html>
